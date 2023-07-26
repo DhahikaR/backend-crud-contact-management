@@ -1,0 +1,111 @@
+//Test User API
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username" : "Dhahika",
+    "password" : "123456",
+    "name" : "Dhahika Rahmadani"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username" : "Dhahika",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+###
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+{
+    "name": "Dhahika R"
+}
+
+###
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+
+// Test Contact API
+###
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+{
+    "first_name": "Alexander",
+    "last_name": "Graham",
+    "email": "graham@gamil.com",
+    "phone": "085748248241"
+}
+
+###
+GET  http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+###
+GET  http://localhost:3000/api/contacts/4065
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+###
+PATCH   http://localhost:3000/api/contacts/4065
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+{
+    "first_name": "Antonio",
+    "last_name": "Guller",
+    "email": "antonioguller@gamil.com",
+    "phone": "085748987645"
+}
+
+###
+DELETE   http://localhost:3000/api/contacts/4067
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+// Test Address API
+
+###
+POST http://localhost:3000/api/contacts/4066/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
+
+{
+    "street": "Jalan Jayabaya",
+    "city": "Surabaya",
+    "province": "Jawa Timur",
+    "country": "Indonesia",
+    "postal_code": "242424"
+}
+
+###
+GET  http://localhost:3000/api/contacts/4066/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: e1b44839-8abb-4df4-80b1-7f543e362820
