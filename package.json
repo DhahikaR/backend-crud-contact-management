@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "RESTful-api",
   "main": "src/main.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "test": "jest",
     "start": "node src/main.js"
