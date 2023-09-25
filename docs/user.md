@@ -2,7 +2,7 @@
 
 ## Register
 
-- Endpoint : POST /api/users
+Endpoint : POST /api/users
 
 Request Body :
 
