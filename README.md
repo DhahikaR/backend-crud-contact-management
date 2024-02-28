@@ -10,7 +10,7 @@ This API used 3rd party for validation, and Jest for Unit Test.
 
 ## Features
 
-- REST APi
+- REST API
 - Token Authorization
 - CRUD Operations
 - MySQL Database
