@@ -4,9 +4,9 @@ A REST API using nodejs and express. This code use Prisma ORM to manage MySQL da
 
 Use three collections, for users, contacts, and addresses. Authorization uses a Token generate from UUID.
 
-Uses middleware for verify token, and can be found in middlewares/authorization-middleware.js. Middleware is also used for manage error.
+Uses middleware for verify token, and handle error response. You can be found in [middlewares](https://github.com/DhahikaR/backend-crud-contact-management/tree/main/src/middleware)
 
-This API used 3rd party for validation, and Jest for Unit Test.
+This API used [Joi](https://www.npmjs.com/package/joi) for validation, and [Jest](https://www.npmjs.com/package/jest) for Unit Test.
 
 ## Features
 

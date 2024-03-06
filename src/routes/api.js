@@ -1,6 +1,6 @@
 import express from "express";
 import userController from "../controller/user-controller.js";
-import { authMiddleware } from "../middleware/authorization-middleware.js";
+import { authMiddleware } from "../middlewares/authorization-middleware.js";
 import contactController from "../controller/contact-controller.js";
 import addressController from "../controller/address-controller.js";
 
